@@ -7,8 +7,20 @@
  */
 function factorial(n) {
     let result = 1;
+
+    if ( n <= 0 ){
+        return;
+    }
+
+    // 階乗
+    for ( var intcnt = 1 ; intcnt <= n ; intcnt ++ ){
+        result *= intcnt;
+    }
+    
     // TODO このコメントを消して正しく実装してください。
+    //return result;
     return result;
+
 }
 
 const assert = require('assert');
