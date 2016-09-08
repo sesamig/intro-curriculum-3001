@@ -3,22 +3,19 @@
  * 与えられた自然数の階乗を返す
  * 階乗とは、1からその与えられた自然数までの数をすべてかけたものです
  * @param {Number} n
- * @returns {Number}
+ * @returns {Number} result
  */
 function factorial(n) {
+    
+    // 戻り値の初期化 
     let result = 1;
 
-    if ( n <= 0 ){
-        return;
-    }
-
-    // 階乗
-    for ( var intcnt = 1 ; intcnt <= n ; intcnt ++ ){
+    // 階乗の処理
+    for ( let  intcnt = 1 ; intcnt <= n ; intcnt ++ ){
         result *= intcnt;
     }
     
-    // TODO このコメントを消して正しく実装してください。
-    //return result;
+    // 戻り値を返す 
     return result;
 
 }
